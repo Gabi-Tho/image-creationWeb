@@ -1,0 +1,14 @@
+@import "style-grid.css";
+body{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 600px){
+    .cols-3{
+        grid-column:span 6;
+    }
+    .cols-4, .cols-6, .cols-8{
+        grid-column: span 12;
+    }
+}
