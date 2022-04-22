@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .image-box{
+            max-width: 400px;
+
+        }
+        .img-elastique{
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <h2>Image Responsive</h2>
+    <picture>
+        <source srcset="img/montreal-ptt.jfif" media="(max-width:600px)">
+        <source srcsets="img/montreal.jfif" media="(max-width:1000px)">
+        <source srcsets="img/spongebob.jfif" media="(max-width:1200px)">
+        <img src="img/spongebob.jfif" alt ="spongebob">
+    </picture> 
+
+    <h2>Image elastique</h2>
+    <picture>
+        <img class="img-elastique"src="img/montreal-ptt.jfif" alt="spongebob">
+    </picture>
 </body>
 </html>
