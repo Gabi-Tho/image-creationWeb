@@ -31,6 +31,9 @@
         .cols-6 {
             grid-column: span 6;
         }
+        .cols-8 {
+            grid-column: span 8;
+        }
         .cols-12 {
             grid-column: span 12;
         }
@@ -40,21 +43,29 @@
         .rows-3{
             grid-row: span 3;
         }
+        @media screen and (max-width: 600px){
+            .cols-3{
+                grid-column:span 6;
+            }
+            .cols-4, .cols-6, .cols-8{
+                grid-column: span 12;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="grid">
-        <div class="cols-4 rows-2">Item 1</div>
-        <div class="cols-4 rows-3">Item 2</div>
+        <div class="cols-4">Item 1</div>
+        <div class="cols-4">Item 2</div>
         <div class="cols-4">Item 3</div>
-        <div class="cols-4">Item 4</div>
-        <div class="cols-3">Item 5</div>
-        <div>Item 6</div>
-        <div>Item 7</div>
+        <div class="cols-8">Item 4</div>
+        <div class="cols-4">Item 5</div>
+        <div class="cols-3">Item 6</div>
+        <div class="cols-3">Item 7</div>
         <div class="cols-3">Item 8</div>
-        <div class="cols-6">Item 9</div>
-        <div class="cols-3">Item 10</div>
-        <div class="cols-3">Item 11</div>
+        <div class="cols-3">Item 9</div>
+        <div class="cols-6">Item 10</div>
+        <div class="cols-6">Item 11</div>
         <div class="cols-12">Item 12</div>
     </div>
 </body>
